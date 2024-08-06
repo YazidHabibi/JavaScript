@@ -38,18 +38,18 @@ if (nilai > 85) {
 }
 
 //Quiz Gambar 2 
-var pendaftaran = -1
-var pembayaran = -1
+    var pendaftaran = -1
+    var pembayaran = -1
 
-if (pendaftaran >0) {
-    if (pembayaran >0) {
-        console.log("Dapat Mengikuti Kursus");       
-       }else {
-        console.log("Tidak Dapat Mengikuti Kursus");
+    if (pendaftaran >0) {
+        if (pembayaran >0) {
+            console.log("Dapat Mengikuti Kursus");       
+        }else {
+            console.log("Tidak Dapat Mengikuti Kursus");
+            
+        }
+    }else {
+        console.log("Tidak dapat Mendaftar");
         
-       }
-}else {
-    console.log("Tidak dapat Mendaftar");
-    
-}
+    }
 
