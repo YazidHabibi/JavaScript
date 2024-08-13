@@ -68,7 +68,7 @@ for (let i = 1; i <= 10; i++) {
   }
 }
 
-// Tugas Gambar Terakhir  (4) Cihuuy
+// Tugas Gambar Terakhir  (4) 
 
 for (let i = 1; i <= 15; i++) {
     if (i % 3 === 0) {

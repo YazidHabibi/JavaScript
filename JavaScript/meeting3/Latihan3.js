@@ -30,7 +30,7 @@ if (angka == 0) {
 
 //praktek nomor 4
 var x = -10
-var y = 10
+var y = -10
 
 if (x > 0 && y > 0) {
     console.log("kanan atas");

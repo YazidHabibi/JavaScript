@@ -1,7 +1,7 @@
 //Quiz gambar 1
 
-var nilai = 80
-var kehadiran = 20
+var nilai = 90
+var kehadiran = 24
 var totalpertemuan = 25
 var presentasekehadiran = kehadiran/totalpertemuan*100
 
