@@ -59,7 +59,7 @@ class Vehicle {
     this.brand = brand;
   }
   start() {
-   return `${this.Vehicle} Is Starting`
+   return `${this.brand} Is Starting`
   }
 }
 
@@ -70,12 +70,13 @@ class Car extends Vehicle  {
     
   }
   start() {
-    return `${this.brand} Is Starting`
+    return `${this.model} Is Starting`
   } 
 }
 
-let Mobil = new Car ("Avanza")
+let Mobil = new Car ("Avanza", "BMW")
 console.log(Mobil.start());
+
 
 
 // Soal Gambar 2
