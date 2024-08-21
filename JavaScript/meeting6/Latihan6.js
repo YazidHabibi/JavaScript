@@ -10,6 +10,10 @@ console.log(identity);
 identity.splice(1,1);
 console.log(identity);
 
+delete identity[0]
+console.log(identity);
+
+
 // Soal 4
 const angka1 = [1,2,3]
 const angka2 = [4,5,6]  
@@ -20,10 +24,9 @@ console.log(angka3);
 console.log(identity.indexOf('Permata Bintaro'));
 
 // soal 6
-const number =  [34, 7, 23, 32, 5];
-number.sort();
-console.log(number);
+const numbers =  [34, 7, 23, 32, 5];
+numbers.sort(function(a,b) {return a-b;});
+console.log(numbers);
 
 // Soal 7
-console.log(number.length);
-
+console.log(numbers.length);

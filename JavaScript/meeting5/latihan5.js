@@ -1,7 +1,7 @@
 //Latihan Soal LOOP
 
 //Tugas Gambar 1
-var day = "Minggu"
+var day = "Senin"
 
 switch (day) {
   case "Senin":
@@ -29,7 +29,7 @@ switch (day) {
     break;
 
   case "Minggu":
-    var jenis = "Weekend";
+    var jenis = "weekend";
     break;
 
   default:
@@ -41,7 +41,7 @@ console.log(jenis);
 
 // Tugas Gambar 2
 
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <=15; i++) {
     // Kelipatan 3 dan 5
     if (i % 3 === 0 && i % 5 === 0) {
       console.log("FizzBuzz");
@@ -71,7 +71,7 @@ for (let i = 1; i <= 10; i++) {
 // Tugas Gambar Terakhir  (4) 
 
 for (let i = 1; i <= 15; i++) {
-    if (i % 3 === 0) {
+    if (i % 3=== 0) {
       console.log("Multiple Of 3: " + i);
     }
   }
