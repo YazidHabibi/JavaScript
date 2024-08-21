@@ -130,13 +130,13 @@ class Manager extends Employee{
     }
   }
 
-  let nama = new Person ("Orang", "Chef")
+  let nama = new Person ("Kibooy", "Chef")
   console.log(nama.introduce());
 
-  let posisi = new Employee ("Orang", "Chef")
+  let posisi = new Employee ("kibooy", "Chef")
   console.log(posisi.introduce());
 
-  let pemilik = new Manager ("Orang", "Chef")
+  let pemilik = new Manager ("Kibooy", "Chef")
   console.log(pemilik.introduce());
   
 
