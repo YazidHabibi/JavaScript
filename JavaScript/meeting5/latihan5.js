@@ -41,9 +41,9 @@ console.log(jenis);
 
 // Tugas Gambar 2
 
-for (let i = 1; i <=15; i++) {
+for (let i = 1; i <=40; i++) {
     // Kelipatan 3 dan 5
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (i % 7 === 0 && i % 5 === 0) {
       console.log("FizzBuzz");
 
       //Kelipatan 3
@@ -70,7 +70,7 @@ for (let i = 1; i <= 10; i++) {
 
 // Tugas Gambar Terakhir  (4) 
 
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <= 28; i++) {
     if (i % 3=== 0) {
       console.log("Multiple Of 3: " + i);
     }

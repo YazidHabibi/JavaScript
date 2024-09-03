@@ -16,8 +16,9 @@ console.log(identity);
 
 // Soal 4
 const angka1 = [1,2,3]
-const angka2 = [4,5,6]  
-const angka3 = angka1.concat(angka2)
+const angka2 = [4,5,6] 
+const angka4 = [7,8,9] 
+const angka3 = angka1.concat(angka2).concat(angka4)
 console.log(angka3);
 
 // Soal 5

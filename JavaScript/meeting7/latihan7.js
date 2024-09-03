@@ -58,7 +58,7 @@ class Buku {
 }
 const mybook = new Buku("Javascript Essentials","Jane Doe")
 console.log(mybook.getDetails());
-
+    
 // Tugas Bag 3 Nomor 2
 mybook.updateAuthor("Habibie");
 
