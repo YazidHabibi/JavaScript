@@ -6,3 +6,4 @@ function printMessages () {
     }, 2000);
     
 }
+printMessages()
