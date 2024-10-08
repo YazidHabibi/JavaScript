@@ -30,4 +30,4 @@ numbers.sort(function(a,b) {return a-b;});
 console.log(numbers);
 
 // Soal 7
-console.log(numbers.length);
+console.log(number.lenght())
