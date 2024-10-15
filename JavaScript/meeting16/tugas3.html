@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 3</title>
+</head>
+<body>
+        <div>       
+            <ul id="konten"></ul>
+        </div>
+    <script>
+        const konten = document.getElementById("konten")
+        const array = ['item1','item2','item3']    
+        for (let i = 0; i < array.length; i++) {
+        const newElement = document.createElement("li")
+        newElement.innerHTML = array[i]
+        konten.appendChild(newElement);
+        }
+
+        konten.firstElementChild.remove()
+
+    </script>
+</body>
+</html>

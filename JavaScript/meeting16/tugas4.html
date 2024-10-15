@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 4</title>
+</head>
+<body>
+    <div id="colorBox">Ini Adalah Text Yang Akan Dirubah Warnannya</div>
+
+
+    <script>
+        const warnaBox = document.getElementById('colorBox')
+        const warna = prompt('Pilih Salah Satu Dari Warna Berikut : red, blue, green')
+        if (warna == 'red') {
+            warnaBox.style.color = 'red';
+        } else if (warna == 'blue') {
+            warnaBox.style.color = 'blue';
+        } else if ( warna == 'green') {
+            warnaBox.style.color = 'green';
+        }else { 
+            alert('Warna Tidak Valid, Silahkan Pilih Masukkan Warna Yang Benar')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    <!-- Contoh Mengakses -->
+    <div class="twes">test class 1</div>
+    <div class="coba">test class 2</div>
+    <div class="coba">test class 3</div>
+    <div class="ngerubah"> <b>Coba DOM</b> </div>
+    <h1></h1>
+
+</body>
+<script>
+    
+    // Contoh akses
+
+    // let id = document.getElementById('12345')
+    // let Kelas = document.getElementsByClassName('Coba')
+    // let tag  = document.getElementsByTagName('h1')
+    // let kelas = document.querySelectorAll(".coba")
+
+    // Ngerubah konten
+    const testing = document.getElementsByClassName("ngerubah")
+// const coba = document.getElementsByClassName("ngerubah")
+    // console.log(id);
+    // console.log(kelas);
+    // console.log(tag);
+    // console.log(querySelector);
+
+    // Contoh Mengubah
+    // console.log(testing[0].innerHTML);
+    // console.log(testing[0].innerText);
+    // console.log(testing[0].textContent);
+    
+    
+    
+    
+    // Membuat element
+    const newelement = document.createElement("p")
+    newelement.innerText = 'test createElement';
+    testing[0].appendChild(newelement)
+    console.log(testing[0].innerHTML);
+
+    // Menghapus element
+    testing[0].removeChild(newelement)
+    
+    
+    
+    
+</script>
+</html>
