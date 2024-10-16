@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Manipulasi style conten</title>
+</head>
+<body>
+
+    <!-- mengubah atribute -->
+    <button class="button">Tombol1</button>
+    <button class="button">Tombol2</button>
+    <button class="button">Tombol3</button>
+
+    <!-- Mengatur posisi konten  -->
+
+    <ul class="ul">
+        <li id="1">Item 1</li>
+        <li id="2">Item 2</li>
+        <li id="3">Item 3</li>
+    </ul>
+    
+    <script>
+        // mengubah atribute
+
+        const gambar  = document.createElement("img")
+        gambar.setAttribute("src", "https://picsum.photos/200/300");
+        document.body.appendChild(gambar);
+
+        const tombol = document.getElementsByClassName("button")
+        for (let i = 0; i < tombol.length; i++) {
+            tombol[i].style. borderRadius = "20px"            
+        }
+
+
+        // Mengatur posisi konten
+        const item4 = document.createElement("li")
+        const ul =  document.getElementsByClassName("ul")
+        item4.innerText = "item 4"
+          ul[0].appendChild(item4)
+
+
+
+    </script>
+</body>
+</html>

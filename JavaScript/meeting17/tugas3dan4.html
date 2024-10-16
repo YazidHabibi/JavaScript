@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 3 </title>
+</head>
+<body>
+    <ul class="MyList"><li>Item lama</li></ul>
+
+    <script>
+
+        const item1 =  document.createElement("li")
+        const ul = document.querySelector(".MyList")
+        item1.innerText = " Item Baru"
+        ul.appendChild(item1)
+
+
+        // Tugas Praktek Google Drive 4
+
+        const item2 = document.createElement("li")
+        item2.innerText = "Item Disisipkan"
+        ul.insertBefore(item2,item1)
+
+
+    </script>
+</body>
+</html>
