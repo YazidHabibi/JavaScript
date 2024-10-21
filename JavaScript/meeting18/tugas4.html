@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 4</title>
+</head>
+<body style="background-color: black;">
+
+    <button id="Tombol" style="text-align: center;">Klik Saya !</button>
+
+        <script>
+            const lanjut = confirm("Apakah Anda Ingin Melanjutkan")
+            if(lanjut){
+                alert("Selamat Datang Di Halaman")
+                if(true){
+                    prompt("Silahkan Masukkan Nama Anda")
+                }
+            }else {
+                alert("Anda Memilih Untuk Tidak Melanjutkan")
+                if(true){
+                    var ok =confirm("Apakah Anda Ingin Mencoba Lagi")
+                    if(ok){
+                        prompt("Silahkan Masukkan Nama Anda")
+                    }else{  
+                        alert("Terima Kasih")
+                    }
+                }else{
+                    alert("Terima Kasih")
+                }
+            }
+
+                const tombol = document.getElementById("Tombol")
+                tombol.addEventListener("click", function(){
+                    Button()
+                })
+
+                function Button(){
+                    let merubah  = document.getElementById("Tombol")
+                    document.getElementById("Tombol").innerText = "Tampilkan Pesan"         
+                }
+        </script>
+</body>
+</html>

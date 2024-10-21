@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 3</title>
+</head>
+<body>
+   <button id="Kliker">Tekan Tombol Untuk Menambah</button>
+   <h3>Kamu Sudah Menekan Tombol Sebanyak <span id="count">0</span></h3>
+
+   <script>
+
+    const Kliker = document.getElementById("Kliker")
+    Kliker.addEventListener("click", function(){
+        clicker();
+    });
+
+    function clicker(){
+        let total  = document.getElementById("count").innerText; total++;
+        document.getElementById("count").innerText = total;
+    }
+    
+   </script>
+</body>
+</html>
