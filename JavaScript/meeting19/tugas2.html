@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 2</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="myButton">Click Me !!</button>
+    </div>
+
+
+    <script>
+
+        const eventBuatan = new CustomEvent('ButtonClicked')
+        function handleButtonCLick (){
+            console.log("Button Was Clicked");
+        }
+        function handleParentClick (){
+            console.log("Parent Div received the event !!");
+            
+        }
+        const ButtonClicked = document.getElementById('myButton')
+
+        ButtonClicked.addEventListener('click', handleParentClick)
+
+
+        ButtonClicked.addEventListener('click', handleButtonCLick)
+
+    </script>
+</body>
+</html>

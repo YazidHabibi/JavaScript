@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan</title>
+    <style>
+
+        .buttons {
+            position: fixed;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            border: 2px solid black;
+            padding: 15px;
+          }   
+
+         .button {
+         margin: 8px;
+         height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+
+        <!-- contoh bubbling -->
+
+        <div onclick="alert('Elemen langit')" align="center">
+          Langit
+          <div onclick="alert('Elemen Luar')" align="center">
+            Luar
+            <div onclick="alert('Elemen Tengah')" align="center">
+              Tengah
+              <div onclick="alert('Elemen Dalam')" align="center">
+                Dalam</div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <!-- contoh capturing -->
+        <div id="langit" align="center">
+          Langit
+          <div id="luar" align="center">
+            Luar
+            <div id="tengah"align="center">
+              Tengah
+              <div id="dalam" align="center">
+                Dalam</div>
+            </div>
+          </div>
+        </div>
+
+
+<!--     
+    <div class="button" align ="center">
+        <h3 id="caption">Silahkan Tekan Salah Satu Tombol Dibawah</h3>
+        <button class="button" id ="tombol">Tombol Custom Event</button>
+    </div> -->
+
+
+        <script>
+
+        const divs = document.getElementsByTagName('div');
+        for (let el of divs) {
+            el.addEventListener('click', function() {
+              alert('ELEMEN ' + el.getAttribute('id').toUpperCase());
+          }, true);
+        }
+
+            
+            // const changeCaption = new Event('changeCaption');
+ 
+            //  window.addEventListener('load', function () {
+            //    const tombol = document.getElementById('tombol');
+            
+            //    tombol.addEventListener('changeCaption', customEventHandler);
+            //    tombol.addEventListener('click', function () {
+            //      tombol.dispatchEvent(changeCaption);
+            //    });
+            //  });
+         
+            //  function customEventHandler(ev) {
+            //    console.log('Event ' + ev.type + ' telah dijalankan');
+            //    const caption = document.getElementById('caption');
+            //    caption.innerText = 'Anda telah membangkitkan custom event';
+            //  }
+        </script>
+</body>
+</html> 

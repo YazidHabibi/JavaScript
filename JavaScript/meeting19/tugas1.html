@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 1</title>
+</head>
+<body>
+        <button id="triggerButton">Testing</button>
+
+    <script>
+        const eventbuatan = new CustomEvent("customClickEvent")
+        function handleCustomClick (){
+            console.log("Custom Click Event Triggered ")
+        }
+      const triggerButton = document.getElementById("triggerButton")
+      triggerButton.addEventListener('click', handleCustomClick)
+    </script>
+</body>
+</html>
