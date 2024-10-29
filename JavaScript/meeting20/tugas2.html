@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div style="color: blue;
+        height: auto;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        border: 1px solid;
+        border-radius: 20px; 
+        width: 300px; 
+        margin-left: 250px;
+        margin-top: 50px;
+        
+        ">MouseOver Dan <i>MouseOut</i></div>
+
+        <script>
+            document.addEventListener('mouseover', function (event) {
+                const div = document.querySelector('div');
+                div.style.backgroundColor = 'gray';
+                div.style.color = 'white';
+            })
+
+            document.addEventListener('mouseout', function (event) {    
+                const div = document.querySelector('div'); 
+                div.style.backgroundColor = 'transparent';
+                div.style.color = 'blue';
+            })
+        </script>
+</body>
+</html>
