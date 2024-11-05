@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktek Google Drive 1</title>
+</head>
+<body>
+    <div align="center" style="margin: 60px; border: 1px solid; padding-top: 50px; padding-bottom:50px;">
+    <input type="text" id="Username" placeholder="Masukkan Username">
+    <button id="SaveButton">Simpan</button>
+    <p id="output"></p>
+    <button id="removeButton" oncl="">hapus</button>
+    <p id="status"></p>
+
+    </div>  
+
+    <script>
+
+        window.addEventListener('load', function () {
+            const storedUsername = localStorage.getItem('username');
+            const status = document.getElementById('status');
+            if (storedUsername) {
+                status.innerText = "Tidak Ada Data Yang Tersimpan";
+            } 
+        });
+
+        document.getElementById('SaveButton').addEventListener('click', function () {
+            const username = document.getElementById('Username').value;
+            localStorage.setItem('username', username);
+            const storedUsername = localStorage.getItem('username');
+            document.getElementById('output').innerText = ("Username Disimpan " + (storedUsername ? storedUsername : "Tidak Ada"));
+        });
+
+
+         const hapus = document.getElementById('removeButton').addEventListener('click', function () {
+            localStorage.removeItem('username');
+            username.innerText = ("Username Di Hapus");
+            
+        });
+
+
+   
+
+
+
+
+        
+    </script>
+
+
+</body>
+</html> 
+
+
